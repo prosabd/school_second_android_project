@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddBook">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Gestion Biblio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text_addbook_head" android:textSize="34sp"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="Ajout Livre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text_addbook_ajout" android:textSize="24sp"/>
+        <EditText
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_addbook_ajout"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+                android:layout_height="wrap_content" android:id="@+id/input_addbook_title" android:hint="Titre"/>
+        <EditText
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_addbook_title"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" android:id="@+id/input_addbook_pages" android:hint="Nb Pages"/>
+        <Button
+                android:text="Ajouter"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_addbook_pages"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+                android:layout_height="wrap_content" android:id="@+id/btn_addbook_confirm"/>
+        <Button
+                android:text="Retour"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_addbook_confirm"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+                android:layout_height="wrap_content" android:id="@+id/btn_addbook_cancel"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
